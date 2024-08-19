@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro - Streaming Service</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Netflix</h1>
+        </header>
+        <main>
+            <h2>Cadastre-se</h2>
+            <form id="signup-form">
+                <label for="Nome">Nome completo:</label>
+                <input type="text" id="nome" name="name" required>
+                <br> 
+                <label for="Data">Data de nascimento:</label>
+                <input type="text" id="data" name="data" required> 
+                <br>
+                <label for="Email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <br>
+                <label for="Número">Número de telefone:</label>
+                <input type="number" id="number" name="number" required>
+                <br>
+                <label for="Endereço">Endereço:</label>
+                <input type="endereco" id="endereco" name="endereco" required >
+                <br>
+                <div class="form-group">
+                    <label for="Pagamento">Método de pagamento:</label> 
+                    <select id="payment" name="payment" >
+                        <option value="Débito">Cartão de Crédito</option>
+                        <option value="pix">Pix</option>
+                        <option value="Crédito">Cartão de Débito</option>
+                    </select>
+                    <div class="form-group">
+                        <br>
+                    </div>
+                    <div>
+                        <br>
+                    <label for="termos">Aceito Termos e Condições:</label>
+                    <select name="termos" id="termos">
+                    <option value="Aceito">Aceito</option>
+                    <option value="Não aceito">Não Aceito</option>
+                    </select>
+                    </div>
+                    <br>
+                </div>
+                <label for="password"> Crie sua senha:</label>
+                <input type="password" id="password" name="password" required>
+                <br>
+                
+                <button type="submit">Cadastrar</button>
+            </form>
+            <div id="message"></div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
